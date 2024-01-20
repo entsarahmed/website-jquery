@@ -1,0 +1,163 @@
+:root{
+  scroll-behavior: auto;
+}
+
+
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  animation: skLinRotate 1s ease-in-out infinite alternate;
+}
+.loader:after{
+  content:"";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top-color: #ff3d00;
+}
+@keyframes skLinRotate {
+  95% ,100% { transform: rotate(840deg) }
+}
+
+body{
+  overflow: hidden;
+}
+
+.sideBar{
+  position: fixed;
+  display: flex;
+  align-items: center;
+
+}
+.sideBar nav{
+height: 100%;
+  padding-inline: 4.375rem;
+  display: none;
+  
+}
+
+.sideBar .icon{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 300px;
+  left: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  vertical-align: baseline;
+}
+.sideBar .close{
+  color: white;
+  transition: color .5s;
+}
+.sideBar .close:hover{
+color: #e68081;
+}
+div nav ul li a{
+  color: white;
+  transition: color .5s;
+}
+div nav ul li a:hover{
+  color: #e68081;
+}
+section h1{
+  font-size: 50px;
+  padding-bottom: 70px;
+  font-weight: 900;
+  color: #fff;
+  list-style: 72px;
+}
+section nav div .close{
+  color: #fff;
+transition: color .5s;
+}
+section nav div .close:hover{
+  color: #e68081;
+}
+
+
+#home{
+  background: linear-gradient(to right,#d4151872,#d4151872),url('../images/events-heavenly-header.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+#duration{
+   /* width: 800px;  */
+  margin: auto;
+  /* padding: 80px; */
+  text-align: center;
+}
+#duration h3{
+  background-color: #e68285;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+}
+#duration p{
+  background-color: #cccccc;
+  width: 100%;
+  padding: 10px;
+  line-height: 24px;
+}
+#twoPara,#threePara,#fourPara{
+  display: none;
+}
+#details{
+  
+  background: linear-gradient(to right,#d41518ad,#d41518ad),url('../images/invitation-2508607__340.jpg');
+ background-size: cover;
+ background-position: center center;
+ background-repeat: no-repeat;
+  padding: 80px;
+  margin-block: 80px;
+}
+.count{
+  border: 2px solid #fff;
+  text-align: center;
+}
+#contact .icons a{
+border: 1px solid #777777;
+background-color: #fff;
+transition: background-color .5s;
+}
+#contact .icons a:hover{
+  background-color: #d62e33;
+}
+#contact .icons a i{
+  color: #777777;
+  transition: color .5s;
+}
+#contact .icons a:hover i{
+  color: #fff;
+}
+#contact input,textarea{
+border: none;
+  box-shadow:inset 0 0 5px 5px #888;
+  background: #fff;
+  color: #000;
+
+}
+#contact input:focus,textarea:focus {
+  outline: none;
+  background-color: #d62e33;
+}
